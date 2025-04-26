@@ -1,38 +1,70 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Depthcopy</title>
+  <title>Derek Wozniak — Brand & UX Strategist</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <div class="container">
-    <h3 class="top-heading">Depthcopy</h3>
 
-    <h1 class="hero-heading">
-      Most brands don't die loudly.<br>
-      They <span class="highlight">fade</span> into language no one even notices.
-    </h1>
+    <header class="header">
+      <h1>Derek Wozniak</h1>
+    </header>
 
-    <p class="sub-text">
-      We don't write to fill space.<br>
-      We write to <span class="highlight">cut through</span>.<br>
-      To land so cleanly it feels inevitable —<br>
-      like something people already knew,<br>
-      but couldn't name until now.
-    </p>
+    <section class="hero">
+      <h2>Good products aren't found. They're felt.</h2>
+      <p>I build messaging systems that don’t just guide users — they imprint brands in memory.</p>
+      <button id="cta-button" class="cta-button">Show Me How →</button>
+    </section>
 
-    <p class="sub-text">
-      Language is leverage.<br>
-      Taste is strategy.<br>
-      Presence is the product.
-    </p>
+    <section class="wins">
+      <h3>Wins That Didn’t Happen by Accident</h3>
+      <ul>
+        <li><a href="#" class="case-link" data-case="onboarding">↑ 45% onboarding conversions →</a></li>
+        <li><a href="#" class="case-link" data-case="checkout">↓ 30% checkout abandonment →</a></li>
+        <li><a href="#" class="case-link" data-case="activation">↑ 70% user activation rate →</a></li>
+      </ul>
+    </section>
 
-    <p class="cta">
-      If you're building something real — <a href="mailto:your@email.com">we should talk.</a>
-    </p>
+    <section class="testimonials">
+      <h3>Actual Humans Said This About Me</h3>
+      <blockquote>“Derek’s UX copy literally cut our onboarding churn in half. Users started moving faster — and so did revenue.”</blockquote>
+      <blockquote>“Precise, clean, confident. Our app feels lighter — and so does our growth curve.”</blockquote>
+    </section>
+
+    <section class="services">
+      <h3>What We Can Build Together</h3>
+      <ul>
+        <li>UX Copy Audits (find the silent friction)</li>
+        <li>High-Converting Landing Pages (start stronger)</li>
+        <li>In-App Microcopy Systems (make action feel inevitable)</li>
+      </ul>
+    </section>
+
+    <section class="cta-final">
+      <h3>Your Users Are Waiting.</h3>
+      <form id="lead-form">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit" class="form-button">Let's Talk →</button>
+      </form>
+      <p class="microcopy">No templates. No fluff. Just sharp, clean, user-first copy.</p>
+    </section>
+
   </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close-button">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-image" src="" alt="Case Study Image">
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
